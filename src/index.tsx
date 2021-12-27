@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { LIB_VERSION } from "./version";
 import { Deck, JokerCard } from "./Model";
 import { JokerJailBreak } from "./JokerJailBreak";
 import { create52CardDeck, shuffleDeck } from "./Utils";
-import reportWebVitals from "./reportWebVitals";
+// import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 
 const createJokerJailBreak = () => {
@@ -60,12 +61,13 @@ ReactDOM.render(
         </a>
       </div>
       <div className="footer">
-        <span>
-          Game created by Ramon Huiskamp (roofkat). Web version by Wouter
-          Cordewiner. Source code available{" "}
-        </span>
+        <span>Game created by </span>
+        <a href="https://roofkat.itch.io/" target="_blank" rel="noreferrer">
+          Ramon Huiskamp (roofkat)
+        </a>
+        <span>. Web version {LIB_VERSION} by Wouter Cordewiner. Source code available </span>
         <a
-          href="https://github.com/wcordewiner/wcordewiner.github.io/tree/main/joker-jailbreak"
+          href="https://github.com/wcordewiner/joker-jailbreak"
           target="_blank"
           rel="noreferrer"
         >
@@ -80,4 +82,4 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
