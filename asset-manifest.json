@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/joker-jailbreak/static/css/main.89a7a702.css",
-    "main.js": "/joker-jailbreak/static/js/main.16183429.js",
-    "static/js/787.8f00d9eb.chunk.js": "/joker-jailbreak/static/js/787.8f00d9eb.chunk.js",
+    "main.css": "/joker-jailbreak/static/css/main.d01e26eb.css",
+    "main.js": "/joker-jailbreak/static/js/main.f95e010d.js",
     "index.html": "/joker-jailbreak/index.html",
-    "main.89a7a702.css.map": "/joker-jailbreak/static/css/main.89a7a702.css.map",
-    "main.16183429.js.map": "/joker-jailbreak/static/js/main.16183429.js.map",
-    "787.8f00d9eb.chunk.js.map": "/joker-jailbreak/static/js/787.8f00d9eb.chunk.js.map"
+    "main.d01e26eb.css.map": "/joker-jailbreak/static/css/main.d01e26eb.css.map",
+    "main.f95e010d.js.map": "/joker-jailbreak/static/js/main.f95e010d.js.map"
   },
   "entrypoints": [
-    "static/css/main.89a7a702.css",
-    "static/js/main.16183429.js"
+    "static/css/main.d01e26eb.css",
+    "static/js/main.f95e010d.js"
   ]
 }
