@@ -31,20 +31,22 @@ export const TopCard = ({
     if (card) onCardClick(card);
   };
 
+  const valueOf = (card: Card): String => {
+    return card.value === 11
+      ? "J"
+      : card.value === 12
+      ? "Q"
+      : card.value === 13
+      ? "K"
+      : card.value.toString();
+  };
+
   return (
     <div className={cardClassNames} onClick={handleClick}>
       <div className="CardInfo">
         {card && <span className={symbolClassName}>{card.suit.symbol}</span>}
         {card && card.suit.kind !== SuitKind.Joker && (
-          <span>
-            {card.value === 11
-              ? "J"
-              : card.value === 12
-              ? "Q"
-              : card.value === 13
-              ? "K"
-              : card.value}
-          </span>
+          <span>{valueOf(card)}</span>
         )}
         {!card && <span>X</span>}
       </div>

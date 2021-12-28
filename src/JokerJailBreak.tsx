@@ -122,51 +122,51 @@ export const JokerJailBreak = ({
     <div className="JokerJailBreak">
       <div className="Row">
         <Stack
-          deck={topLeft}
+          stack={topLeft}
           onCardClick={toggleSelectedCard}
           selectedCards={selectedCards}
         />
         <Stack
-          deck={topCentre}
+          stack={topCentre}
           onCardClick={toggleSelectedCard}
           selectedCards={selectedCards}
         />
         <Stack
-          deck={topRight}
-          onCardClick={toggleSelectedCard}
-          selectedCards={selectedCards}
-        />
-      </div>
-      <div className="Row">
-        <Stack
-          deck={middleLeft}
-          onCardClick={toggleSelectedCard}
-          selectedCards={selectedCards}
-        />
-        <Stack
-          deck={middleCentre}
-          onCardClick={toggleSelectedCard}
-          selectedCards={selectedCards}
-        />
-        <Stack
-          deck={middleRight}
+          stack={topRight}
           onCardClick={toggleSelectedCard}
           selectedCards={selectedCards}
         />
       </div>
       <div className="Row">
         <Stack
-          deck={bottomLeft}
+          stack={middleLeft}
           onCardClick={toggleSelectedCard}
           selectedCards={selectedCards}
         />
         <Stack
-          deck={bottomCentre}
+          stack={middleCentre}
           onCardClick={toggleSelectedCard}
           selectedCards={selectedCards}
         />
         <Stack
-          deck={bottomRight}
+          stack={middleRight}
+          onCardClick={toggleSelectedCard}
+          selectedCards={selectedCards}
+        />
+      </div>
+      <div className="Row">
+        <Stack
+          stack={bottomLeft}
+          onCardClick={toggleSelectedCard}
+          selectedCards={selectedCards}
+        />
+        <Stack
+          stack={bottomCentre}
+          onCardClick={toggleSelectedCard}
+          selectedCards={selectedCards}
+        />
+        <Stack
+          stack={bottomRight}
           onCardClick={toggleSelectedCard}
           selectedCards={selectedCards}
         />

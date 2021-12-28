@@ -4,18 +4,18 @@ import { TopCard } from "./TopCard";
 import "./Stack.css";
 
 export type StackProps = {
-  deck: Deck;
+  stack: Deck;
   onCardClick: (card: Card) => void;
   selectedCards: Set<Card>;
 };
 
-export const Stack = ({ deck, onCardClick, selectedCards }: StackProps) => {
+export const Stack = ({ stack, onCardClick, selectedCards }: StackProps) => {
   return (
     <div className="Stack">
       <TopCard
-        card={deck.isEmpty() ? undefined : deck.peek()}
+        card={stack.isEmpty() ? undefined : stack.peek()}
         onCardClick={onCardClick}
-        nrOfCards={deck.size()}
+        nrOfCards={stack.size()}
         selectedCards={selectedCards}
       ></TopCard>
     </div>

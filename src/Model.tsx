@@ -49,7 +49,7 @@ export const Spades: Suit = {
 const Joker: Suit = {
   kind: SuitKind.Joker,
   color: SuitColor.Black,
-  symbol: "🃏",
+  symbol: "Joker",
 };
 
 export interface Card {
