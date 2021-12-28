@@ -22,9 +22,9 @@ const createJokerJailBreak = () => {
   [topLeft, deck] = deck.draws(3);
   [topCentre, deck] = deck.draws(7);
   [topRight, deck] = deck.draws(3);
-  [middleLeft, deck] = deck.draws(3);
+  [middleLeft, deck] = deck.draws(7);
   middleCentre = new Deck([JokerCard]);
-  [middleRight, deck] = deck.draws(3);
+  [middleRight, deck] = deck.draws(7);
   [bottomLeft, deck] = deck.draws(3);
   [bottomCentre, deck] = deck.draws(7);
   [bottomRight, deck] = deck.draws(3);
