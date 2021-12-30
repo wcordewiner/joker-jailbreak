@@ -76,7 +76,7 @@ export const JokerJailBreak = ({
     deck: Deck,
     setDeck: (newDeck: Deck) => void
   ) => {
-    if (cardsToRemove.has(deck.peek())) {
+    if (deck.isNotEmpty() && cardsToRemove.has(deck.peek())) {
       removeTopCardFromDeck(deck, setDeck);
     }
   };
